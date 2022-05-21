@@ -4,8 +4,12 @@ import styled from "@emotion/styled";
 import Home from "./pages/home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { frwc64 } from "./util/frwc64.js";
+
 
 const App = () => {
+  let wiz = frwc64.generateWizard(6761);
+  console.log(wiz);
   return (
     <Wrapper>
       <GlobalStyles />

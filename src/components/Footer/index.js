@@ -9,10 +9,10 @@ const Footer = () => (
   <Wrapper>
     <Container>
       <StyledFooter>
-        <h1>wagmi starter</h1>
+        <h1>Build-a-wizard</h1>
         <Icons>
           <a
-            href="https://twitter.com/cosmoburn"
+            href="https://twitter.com/ThunderfuryYerg"
             target="_blank"
             rel="noreferrer"
           >

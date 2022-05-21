@@ -16,7 +16,7 @@ const Header = () => {
     <StyckyTop>
       <Container>
         <StyledHeader>
-          <h1>wagmi starter</h1>
+          <h1>Build-a-wizard</h1>
           <AccountContainer>
             {accountData ? (
               <AccountBadge account={accountData} onDisconnect={disconnect} />

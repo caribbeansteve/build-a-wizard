@@ -1,83 +1,14 @@
 import Container from "../../components/Container";
 import styled from "@emotion/styled";
+import Wizard from "../../components/Wizard";
 
 const Home = () => {
   return (
     <HomeWrapper>
-      <SectionWrapper>
-        <Container>
-          <h2>A section on the home page</h2>
-          <p>With some content</p>
-        </Container>
-      </SectionWrapper>
       <SectionWrapper bg="#7cd0ff" color="black">
         <Container>
-          <h2>Another section on the home page</h2>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-          <div>With content so we can scroll</div>
-        </Container>
-      </SectionWrapper>
-      <SectionWrapper>
-        <Container>
-          <h2>A section on the home page</h2>
+          <Wizard>
+          </Wizard>
         </Container>
       </SectionWrapper>
     </HomeWrapper>
