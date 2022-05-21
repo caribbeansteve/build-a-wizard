@@ -642,6 +642,7 @@ frwc64.generateWizard = function(wizardID) {
     let listr = ['background','body','head','prop','familiar','rune']
     let outtr = []
     listr.forEach(function(item, idx) {
+      console.log(item);
       let n = wiz[item]
       let c = evx(n)
       outtr.push([c, listg[idx]])
@@ -767,7 +768,6 @@ frwc64.renderComponent = function(c, options) {
   let bgColor;
   let accr = 0
   if (c) {
-    accr++
     let img = new Image()
     img.onload = function() {
         ctx.drawImage(img, x, y, w, h)

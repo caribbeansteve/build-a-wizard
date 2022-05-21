@@ -4,23 +4,38 @@ import React, { useState } from 'react';
 import styled from "@emotion/styled";
 
 const Wizard = () => {
+
+    const options = ['background','body','head','prop','familiar','rune'];
+    const [wizard, setWizard] = useState({});
+    const [wizId, setWizardId] = useState('')
+
     function findWizard(id) {
         const int_id = parseInt(id);
-        console.log(id);
-        let wiz = frwc64.generateWizard(parseInt(id));
-        console.log(wiz);
+        if(int_id > 10000 || int_id < 0) {
+            alert('ERROR not a wizzy ID');
+            return;
+        }
+        console.log(int_id);
+        let wiz = frwc64.generateWizard(int_id);
         frwc64.renderWizard(wiz);
+        setWizard(wiz);
+        console.log(wizard);
     }
 
-    const [wizard, setWizard] = useState('');
+    function findComponent(c) {
+
+    }
 
     return (
         <>
             <canvas width ="400" height="400"></canvas>
-            <StyledInput placeholder='Wizard ID' type="number" onChange={e => setWizard(e.target.value)}></StyledInput>
-            <WagmiButton onClick={() => findWizard(wizard)}>
+            <StyledInput placeholder='Wizard ID' type="number" onChange={e => setWizardId(e.target.value)}></StyledInput>
+            <WagmiButton onClick={() => findWizard(wizId)}>
                 Load Wizard
             </WagmiButton>
+            <select>
+
+            </select>
             {/* <WagmiButton onClick={() => findWizard(x)}>
                 Load Component
             </WagmiButton> */}
